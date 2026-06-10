@@ -1,0 +1,229 @@
+/* ===== VARIABLES ===== */
+:root {
+    --bg: #f4f4f4;
+    --text: #222;
+    --card: #fff;
+    --accent: #0077ff;
+    --bar: #ddd;
+    --footer: #666;
+}
+
+body.dark {
+    --bg: #111;
+    --text: #fff;
+    --card: #1e1e1e;
+    --accent: #5f4dff;
+    --bar: #333;
+    --footer: #aaa;
+}
+
+/* ===== BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ===== HEADER ===== */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 10px 15px;
+    background: #0077b5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn.linkedin {
+    background: #0077b5;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    background: var(--card);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+/* ===== ABOUT ===== */
+.about-box {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.about-box img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.about-box img:hover {
+    transform: scale(1.05);
+}
+
+.about-box p {
+    max-width: 500px;
+    text-align: justify;
+}
+
+/* ===== SKILLS ===== */
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.level {
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+.bar {
+    height: 8px;
+    background: var(--bar);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    background: var(--accent);
+}
+
+/* ===== PROJECTS ===== */
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.card {
+    padding: 25px;
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Code Button */
+.project-btn {
+    margin-top: 12px;
+    padding: 8px 14px;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    background: transparent;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.project-btn:hover {
+    background: var(--accent);
+    color: #fff;
+    transform: translateY(-2px) translateX(2px);
+}
+
+/* Dark Mode Fix */
+body.dark .project-btn {
+    color: #6aa6ff;
+    border-color: #6aa6ff;
+}
+
+body.dark .project-btn:hover {
+    background: #6aa6ff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: var(--footer);
+}
+
+footer a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== DARK BUTTON ===== */
+#darkBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .about-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
