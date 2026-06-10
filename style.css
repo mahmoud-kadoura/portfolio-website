@@ -148,13 +148,19 @@ section h2 {
     gap: 15px;
 }
 
+
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     padding: 25px;
     background: var(--card);
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: 0.3s;
+    height: 100%;
 }
+
 
 .card:hover {
     transform: translateY(-5px);
@@ -171,6 +177,7 @@ section h2 {
     border-radius: 8px;
     text-decoration: none;
     display: inline-block;
+    margin-top: auto;
 }
 
 .project-btn:hover {
@@ -186,7 +193,8 @@ body.dark .project-btn {
 }
 
 body.dark .project-btn:hover {
-    background: #6aa6ff;
+    background: var(--accent);
+    color: #fff;
 }
 
 /* ===== FOOTER ===== */
