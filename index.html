@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Zeichencodierung für Umlaute und Sonderzeichen -->
+    <meta charset="UTF-8">
+    <!-- Responsives Design für Smartphones und Tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud Kadoura</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Button zum Umschalten zwischen Light- und Dark-Mode -->
+<button id="darkBtn">🌙</button>
+
+<!-- Hauptcontainer für den gesamten Seiteninhalt -->
+<div class="container">
+
+<!-- ================= HERO SECTION ================= -->
+<!-- Begrüßungsbereich mit Name und wichtigen Links -->
+<header class="hero">
+    <!-- Name -->
+    <h1>Mahmoud Kadoura</h1>
+    <!-- Berufsbezeichnung -->
+    <p>Angehender Fachinformatiker für Anwendungsentwicklung</p>
+
+    <!-- Navigations-Buttons -->
+    <div class="buttons">
+        <!-- Lebenslauf als PDF öffnen -->    
+        <a href="Lebenslauf.pdf" 
+            target="_blank" 
+            class="btn">
+            Lebenslauf </a>
+
+        <!-- GitHub-Profil -->
+        <a href="https://github.com/mahmoud-kadoura/" 
+            target="_blank" 
+            class="btn outline">
+            GitHub</a>
+
+        <!-- LinkedIn-Profil -->
+        <a href="https://www.linkedin.com/in/mahmoud-kadoura" 
+        target="_blank" class="btn linkedin">
+        LinkedIn</a>
+
+    </div>
+</header>
+
+<main>
+
+<!-- ================= ÜBER MICH ================= -->
+<section class="fade-in">
+
+    <!-- Abschnittsüberschrift -->
+    <h2>Über mich</h2>
+
+    <div class="about-box">
+        <img src="mein_bild.png" alt="">
+        <p>
+    Ich bin ein motivierter angehender Fachinformatiker für Anwendungsentwicklung 
+    mit großem Interesse an Softwareentwicklung und modernen Technologien.  
+
+    Ich arbeite strukturiert, lerne schnell und analysiere Probleme, 
+    um geeignete Lösungen zu entwickeln. 
+    Besonders schätze ich die Zusammenarbeit im Team und die Möglichkeit, 
+    meine Fähigkeiten kontinuierlich zu verbessern. </p>
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<!-- Darstellung der technischen Kenntnisse -->
+<section class="fade-in">
+
+    <h2>Skills</h2>
+
+    <!-- Java -->
+    <div class="skill">
+        <div class="skill-header">
+            <span>Java</span>
+            <span class="level">Fortgeschrittene Kenntnisse</span>
+        </div>
+        <div class="bar"><div style="width:60%"></div></div>
+    </div>
+
+    <!-- Python -->
+    <div class="skill">
+        <div class="skill-header">
+            <span>Python</span>
+            <span class="level">Gute Kenntnisse</span>
+        </div>
+        <div class="bar"><div style="width:35%"></div></div>
+    </div>
+
+    <!-- HTML & CSS -->
+    <div class="skill">
+        <div class="skill-header">
+            <span>HTML & CSS</span>
+            <span class="level">Gute Grundkenntnisse</span>
+        </div>
+        <div class="bar"><div style="width:50%"></div></div>
+    </div>
+
+    <!-- SQL -->
+    <div class="skill">
+        <div class="skill-header">
+            <span>SQL </span>
+            <span class="level">Grundkenntnisse</span>
+        </div>
+        <div class="bar"><div style="width:40%"></div></div>
+    </div>
+
+</section>
+
+<!-- Projekte -->
+<section class="fade-in">
+    <h2>Projekte</h2>
+
+    <div class="projects">
+
+    <div class = "card">
+        <h3>kaese-und-wein-verwaltung</h3>
+        <p>Java-Konsolenanwendung zur Verwaltung von Käse- und Weinprodukten 
+            mit Benutzeranmeldung, Lagerverwaltung, automatischer Entsorgung, Statistik und Historie.
+        </p>
+        <a href="https://github.com/mahmoud-kadoura/kaese-und-wein-verwaltung.git" target="_blank" class="project-btn">
+            code ansehen
+        </a>
+    </div>
+    <div class="card">
+        <h3>Pokemon Java & SQL Projekt</h3>
+        <p>
+    Entwicklung eines Konsolenspiels in Java mit rundenbasiertem Kampfsystem.
+    Einsatz von objektorientierter Programmierung (OOP) 
+    sowie erste Erfahrungen mit SQL-Datenbankintegration (JDBC).
+        </p>
+        <a href="https://github.com/mahmoud-kadoura/Pokemon_projekt.git" target="_blank" class="project-btn">
+        Code ansehen
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>
+            Eigene entwickelte Webseite mit HTML, CSS und JavaScript.
+            Responsive Design und Dark Mode integriert.
+        </p>
+        
+        <a href="https://github.com/mahmoud-kadoura/portfolio-website" target="_blank" class="project-btn">
+        Projekt ansehen
+        </a>
+
+    </div>
+
+
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    
+    <div class="contact">
+        <p><strong>Kontakt</strong></p>
+        <p>📧 <a href="mailto:mahmoud.kadoura70@gmail.com">mahmoud.kadoura70@gmail.com</a></p>
+        <p>📞 <a href="tel:017621619338">0176 21619338</a></p>
+    </div>
+    
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
